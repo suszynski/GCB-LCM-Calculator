@@ -13,7 +13,7 @@ bool clearInput()  // Returns true if the wrong input is found; otherwise, it
 	{
 		std::cin.clear();
 		ignoreLine();
-		std::cout << "Wrong input, try again.\n";
+		std::cerr << "Wrong input, try again.\n";
 		return true;
 	}
 	return false;
@@ -84,7 +84,7 @@ short getChoice()
 
 		if (input > 4 || input < 1) // If input is out of bounds.
 		{
-			std::cout << "Wrong input, try again.\n";
+			std::cerr << "Wrong input, try again.\n";
 			continue;
 		}
 		ignoreLine(); // Clears the buffer.
@@ -115,7 +115,7 @@ bool printOutput(short choice, std::pair<long, long>& pair)
 		std::cout << '\n';
 		return true;
 	default: // Unexpected error
-		std::cout << "Uh Oh! Something went wrong!";
+		std::cerr << "Uh Oh! Something went wrong!";
 		return false;
 
 	}
