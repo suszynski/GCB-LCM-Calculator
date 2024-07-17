@@ -1,2 +1,2 @@
 # GCB-LCM-Calculator
-A well-commented simple greatest common divisor and least common multiple calculator using input validation.
+A well-commented simple C++ greatest common divisor and least common multiple calculator using input validation.
